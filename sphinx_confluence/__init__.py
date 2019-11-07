@@ -171,7 +171,7 @@ class HTMLConfluenceTranslator(HTMLTranslator):
         uri = node['uri']
         filename = os.path.basename(uri)
         atts['alt'] = node.get('alt', uri)
-        atts['thumbnail'] = 'true'
+        # atts['thumbnail'] = 'true'
 
         if 'width' in node:
             atts['width'] = node['width']
